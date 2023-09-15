@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    /* color: white; */
+}
+
+a{  
+    text-decoration: none;
+    color: black;   
+}
+
+.announcement-bar {
+    text-align: center;
+
+    background-color: #98a88d;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 0.1rem solid rgba(33, 37, 41, 0.08);
+}
+
+.announcement-bar_message {
+    margin: 0;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    font-style: 'Assistant, sans-serif;';
+}
+
+.header_heading {
+    /* margin-left: 0; */
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: unset;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 5px 29px 5px 15px;
+}
+
+
+.header_heading_h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header_heading svg {
+    width: 68px;
+    max-width: 68px;
+    vertical-align: middle !important;
+
+}
+
+.header_inline-menu {
+    margin: 0 2rem;
+}
+
+.list-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    z-index: 30;
+    width: 500px;
+}
+
+.list-menu>li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.details-ul {
+    position: absolute;
+    width: 250px;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.details-ul li{
+    list-style: none;
+    text-align: left;
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+.details-ul li a{
+    color: black;
+}
+
+
+#details-headermenu>summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.header_icons {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container-2{
+    /* max-width: 100%; */
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.mySlides2{
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.mySlides2 img{
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+
+.prev2,
+.next2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease-in-out;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next2{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev2:hover,
+.next2:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot-container{
+    position: absolute;
+    top: 93%;
+    left: 48%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+
+.nack-section-featured-content{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.pre-heading{
+    color: black;
+    font-family: "ApercuPro-Bold,Source Sans Pro,Helvetica,sans-serif";
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.section-title{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+
+.container1{
+    display: flex;
+    width: 1180px;
+    margin: 5rem auto;
+}
+
+.container1-left{
+    margin: auto 0;
+    width: 41.66666667%;
+}
+
+.container1-right{
+    width: 58.33333333%;
+    padding: 0 4%;
+}
+
+.container1-right img{
+    max-height: 730px;
+    width: 560px;
+    object-fit: cover;
+    vertical-align: middle !important;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    padding-top:.6rem;
+    margin: 2rem 0;
+    text-align: center;
+    vertical-align: center;  
+    background-color: #face93 !important;
+}
+
+.container2{
+    display: flex;
+    width: 100%;
+    margin: 5rem auto;
+    padding-left: 5%;
+}
+
+.left-background{
+    padding: 7% 7%;
+    background-color: #f2efec;;
+}
+
+.hover-a >a:hover{
+    color: #face93;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
